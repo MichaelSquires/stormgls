@@ -17,7 +17,7 @@ configs.storm = {
   },
 }
 
-lspconfig.storm.setup{}
+--lspconfig.storm.setup{}
 
 vim.api.nvim_create_user_command('StormUpdate', function()
     local job = vim.fn.jobstart('pip install -r ' .. dir .. '/../../requirements.txt')
